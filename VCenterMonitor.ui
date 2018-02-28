@@ -6,19 +6,26 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>725</width>
-    <height>456</height>
+    <width>1042</width>
+    <height>607</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>VCenter Monitor</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icon/Activity Monitor (1).png</normaloff>icon/Activity Monitor (1).png</iconset>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="horizontalLayout_3">
     <item>
      <widget class="QTabWidget" name="tabWidget">
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tabConnection">
        <attribute name="title">
@@ -39,8 +46,8 @@
                 <string>Start</string>
                </property>
                <property name="icon">
-                <iconset>
-                 <normaloff>../../../../Users/Admin/Pictures/icon/turn_on_off_power-16.png</normaloff>../../../../Users/Admin/Pictures/icon/turn_on_off_power-16.png</iconset>
+                <iconset resource="resource.qrc">
+                 <normaloff>:/icon/icon/turn_on_off_power-32.png</normaloff>:/icon/icon/turn_on_off_power-32.png</iconset>
                </property>
               </widget>
              </item>
@@ -53,8 +60,8 @@
                 <string>Stop</string>
                </property>
                <property name="icon">
-                <iconset>
-                 <normaloff>../../../../Users/Admin/Pictures/icon/turn_off_on_power-16.png</normaloff>../../../../Users/Admin/Pictures/icon/turn_off_on_power-16.png</iconset>
+                <iconset resource="resource.qrc">
+                 <normaloff>:/icon/icon/turn_off_on_power-32.png</normaloff>:/icon/icon/turn_off_on_power-32.png</iconset>
                </property>
               </widget>
              </item>
@@ -67,8 +74,8 @@
                 <string>Settings</string>
                </property>
                <property name="icon">
-                <iconset>
-                 <normaloff>../../../../Users/Admin/Pictures/icon/seo2-18-16.png</normaloff>../../../../Users/Admin/Pictures/icon/seo2-18-16.png</iconset>
+                <iconset resource="resource.qrc">
+                 <normaloff>:/icon/icon/seo2-18-32.png</normaloff>:/icon/icon/seo2-18-32.png</iconset>
                </property>
               </widget>
              </item>
@@ -121,27 +128,50 @@
                 <item>
                  <widget class="QLineEdit" name="lineEdit"/>
                 </item>
-                <item>
-                 <widget class="QPushButton" name="pushButton_5">
-                  <property name="text">
-                   <string>Send</string>
-                  </property>
-                  <property name="icon">
-                   <iconset>
-                    <normaloff>../../../../Users/Admin/Pictures/icon/17-48.png</normaloff>../../../../Users/Admin/Pictures/icon/17-48.png</iconset>
-                  </property>
-                  <property name="autoDefault">
-                   <bool>false</bool>
-                  </property>
-                  <property name="default">
-                   <bool>false</bool>
-                  </property>
-                  <property name="flat">
-                   <bool>false</bool>
-                  </property>
-                 </widget>
-                </item>
                </layout>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_6">
+              <item>
+               <widget class="QPushButton" name="pushButton_5">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>Send</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="resource.qrc">
+                  <normaloff>:/icon/icon/17-48.png</normaloff>:/icon/icon/17-48.png</iconset>
+                </property>
+                <property name="autoDefault">
+                 <bool>false</bool>
+                </property>
+                <property name="default">
+                 <bool>false</bool>
+                </property>
+                <property name="flat">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
               </item>
              </layout>
             </item>
@@ -186,8 +216,8 @@
              <string>Search</string>
             </property>
             <property name="icon">
-             <iconset>
-              <normaloff>../../../../Users/Admin/Pictures/icon/Search-48.png</normaloff>../../../../Users/Admin/Pictures/icon/Search-48.png</iconset>
+             <iconset resource="resource.qrc">
+              <normaloff>:/icon/icon/Search-48.png</normaloff>:/icon/icon/Search-48.png</iconset>
             </property>
            </widget>
           </item>
@@ -220,7 +250,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>725</width>
+     <width>1042</width>
      <height>21</height>
     </rect>
    </property>
@@ -250,8 +280,8 @@
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionQuit">
    <property name="icon">
-    <iconset>
-     <normaloff>../../../../Users/Admin/Pictures/icon/logout-16.png</normaloff>../../../../Users/Admin/Pictures/icon/logout-16.png</iconset>
+    <iconset resource="resource.qrc">
+     <normaloff>:/icon/icon/logout-16.png</normaloff>:/icon/icon/logout-16.png</iconset>
    </property>
    <property name="text">
     <string>Exit</string>
@@ -272,8 +302,8 @@
   </action>
   <action name="actionStart">
    <property name="icon">
-    <iconset>
-     <normaloff>../../../../Users/Admin/Pictures/icon/turn_on_off_power-16.png</normaloff>../../../../Users/Admin/Pictures/icon/turn_on_off_power-16.png</iconset>
+    <iconset resource="resource.qrc">
+     <normaloff>:/icon/icon/turn_on_off_power-16.png</normaloff>:/icon/icon/turn_on_off_power-16.png</iconset>
    </property>
    <property name="text">
     <string>Start</string>
@@ -284,8 +314,8 @@
   </action>
   <action name="actionStop_Server">
    <property name="icon">
-    <iconset>
-     <normaloff>../../../../Users/Admin/Pictures/icon/turn_off_on_power-16.png</normaloff>../../../../Users/Admin/Pictures/icon/turn_off_on_power-16.png</iconset>
+    <iconset resource="resource.qrc">
+     <normaloff>:/icon/icon/turn_off_on_power-16.png</normaloff>:/icon/icon/turn_off_on_power-16.png</iconset>
    </property>
    <property name="text">
     <string>Stop</string>
@@ -295,6 +325,8 @@
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
  <connections/>
 </ui>
