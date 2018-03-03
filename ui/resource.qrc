@@ -1,5 +1,7 @@
 <RCC>
   <qresource prefix="icon">
+    <file>icon/150_-_Cancel-20.png</file>
+    <file>icon/login-24.png</file>
     <file>icon/17-16.png</file>
     <file>icon/17-20.png</file>
     <file>icon/17-24.png</file>
@@ -34,6 +36,6 @@
     <file>icon/UI-2-18-20.png</file>
     <file>icon/UI-2-18-24.png</file>
     <file>icon/UI-2-18-32.png</file>
-    <file>icon/17-16.png</file>
+    <file>icon/user_login.png</file>
   </qresource>
 </RCC>
