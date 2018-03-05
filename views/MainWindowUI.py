@@ -10,12 +10,14 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 
 from ServerSettingsUI import Ui_ServerSettingDialog
 
+
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1042, 607)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("icon/Activity Monitor (1).png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("icon/Activity Monitor (1).png"),
+                       QtGui.QIcon.Normal, QtGui.QIcon.Off)
         MainWindow.setWindowIcon(icon)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -35,27 +37,33 @@ class Ui_MainWindow(object):
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.btnServerStart = QtWidgets.QPushButton(self.widgetCom)
-        self.btnServerStart.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btnServerStart.setCursor(
+            QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap(":/icon/icon/turn_on_off_power-32.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon1.addPixmap(QtGui.QPixmap(
+            ":/icon/icon/turn_on_off_power-32.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.btnServerStart.setIcon(icon1)
         self.btnServerStart.setObjectName("btnServerStart")
         self.horizontalLayout.addWidget(self.btnServerStart)
         self.btnServerStop = QtWidgets.QPushButton(self.widgetCom)
-        self.btnServerStop.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.btnServerStop.setCursor(
+            QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap(":/icon/icon/turn_off_on_power-32.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon2.addPixmap(QtGui.QPixmap(
+            ":/icon/icon/turn_off_on_power-32.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.btnServerStop.setIcon(icon2)
         self.btnServerStop.setObjectName("btnServerStop")
         self.horizontalLayout.addWidget(self.btnServerStop)
         self.btnSetting = QtWidgets.QPushButton(self.widgetCom)
         self.btnSetting.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap(":/icon/icon/seo2-18-32.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon3.addPixmap(QtGui.QPixmap(":/icon/icon/seo2-18-32.png"),
+                        QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.btnSetting.setIcon(icon3)
         self.btnSetting.setObjectName("btnSetting")
         self.horizontalLayout.addWidget(self.btnSetting)
-        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem = QtWidgets.QSpacerItem(
+            40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout.addItem(spacerItem)
         self.gridLayout_3.addLayout(self.horizontalLayout, 0, 0, 1, 1)
         self.grvClients = QtWidgets.QListView(self.widgetCom)
@@ -74,10 +82,12 @@ class Ui_MainWindow(object):
         self.verticalLayout_2 = QtWidgets.QVBoxLayout()
         self.verticalLayout_2.setObjectName("verticalLayout_2")
         self.cbbConnections = QtWidgets.QComboBox(self.tabCOM)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.cbbConnections.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.cbbConnections.sizePolicy().hasHeightForWidth())
         self.cbbConnections.setSizePolicy(sizePolicy)
         self.cbbConnections.setObjectName("cbbConnections")
         self.verticalLayout_2.addWidget(self.cbbConnections)
@@ -91,23 +101,28 @@ class Ui_MainWindow(object):
         self.horizontalLayout_6 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_6.setObjectName("horizontalLayout_6")
         self.btnSendMessage = QtWidgets.QPushButton(self.tabCOM)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.btnSendMessage.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.btnSendMessage.sizePolicy().hasHeightForWidth())
         self.btnSendMessage.setSizePolicy(sizePolicy)
         icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap(":/icon/icon/17-48.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon4.addPixmap(QtGui.QPixmap(":/icon/icon/17-48.png"),
+                        QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.btnSendMessage.setIcon(icon4)
         self.btnSendMessage.setAutoDefault(False)
         self.btnSendMessage.setDefault(False)
         self.btnSendMessage.setFlat(False)
         self.btnSendMessage.setObjectName("btnSendMessage")
         self.horizontalLayout_6.addWidget(self.btnSendMessage)
-        spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem1 = QtWidgets.QSpacerItem(
+            40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout_6.addItem(spacerItem1)
         self.verticalLayout_3.addLayout(self.horizontalLayout_6)
-        spacerItem2 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem2 = QtWidgets.QSpacerItem(
+            20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.verticalLayout_3.addItem(spacerItem2)
         self.horizontalLayout_5.addLayout(self.verticalLayout_3)
         self.txtOutput = QtWidgets.QTextEdit(self.tabCOM)
@@ -148,11 +163,13 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2.addWidget(self.txtToDate)
         self.btnSearchLog = QtWidgets.QPushButton(self.layoutWidget1)
         icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap(":/icon/icon/Search-48.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon5.addPixmap(QtGui.QPixmap(":/icon/icon/Search-48.png"),
+                        QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.btnSearchLog.setIcon(icon5)
         self.btnSearchLog.setObjectName("btnSearchLog")
         self.horizontalLayout_2.addWidget(self.btnSearchLog)
-        spacerItem3 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem3 = QtWidgets.QSpacerItem(
+            40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout_2.addItem(spacerItem3)
         self.verticalLayout_5.addLayout(self.horizontalLayout_2)
         self.grvEvents = QtWidgets.QListView(self.layoutWidget1)
@@ -177,7 +194,8 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
         self.actionQuit = QtWidgets.QAction(MainWindow)
         icon6 = QtGui.QIcon()
-        icon6.addPixmap(QtGui.QPixmap(":/icon/icon/logout-16.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon6.addPixmap(QtGui.QPixmap(":/icon/icon/logout-16.png"),
+                        QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.actionQuit.setIcon(icon6)
         self.actionQuit.setObjectName("actionQuit")
         self.actionOptions = QtWidgets.QAction(MainWindow)
@@ -186,13 +204,15 @@ class Ui_MainWindow(object):
         self.actionAbout.setObjectName("actionAbout")
         self.actionStart = QtWidgets.QAction(MainWindow)
         icon7 = QtGui.QIcon()
-        icon7.addPixmap(QtGui.QPixmap(":/icon/icon/turn_on_off_power-16.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon7.addPixmap(QtGui.QPixmap(
+            ":/icon/icon/turn_on_off_power-16.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.actionStart.setIcon(icon7)
         self.actionStart.setShortcut("")
         self.actionStart.setObjectName("actionStart")
         self.actionStop_Server = QtWidgets.QAction(MainWindow)
         icon8 = QtGui.QIcon()
-        icon8.addPixmap(QtGui.QPixmap(":/icon/icon/turn_off_on_power-16.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon8.addPixmap(QtGui.QPixmap(
+            ":/icon/icon/turn_off_on_power-16.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.actionStop_Server.setIcon(icon8)
         self.actionStop_Server.setObjectName("actionStop_Server")
         self.menuFile.addAction(self.actionStart)
@@ -214,12 +234,15 @@ class Ui_MainWindow(object):
         self.btnServerStart.setText(_translate("MainWindow", "Start"))
         self.btnServerStop.setText(_translate("MainWindow", "Stop"))
         self.btnSetting.setText(_translate("MainWindow", "Settings"))
-        self.MainTap.setTabText(self.MainTap.indexOf(self.tabConnection), _translate("MainWindow", "Server/Client"))
+        self.MainTap.setTabText(self.MainTap.indexOf(
+            self.tabConnection), _translate("MainWindow", "Server/Client"))
         self.btnSendMessage.setText(_translate("MainWindow", "Send"))
-        self.MainTap.setTabText(self.MainTap.indexOf(self.tabCOM), _translate("MainWindow", "COM"))
+        self.MainTap.setTabText(self.MainTap.indexOf(
+            self.tabCOM), _translate("MainWindow", "COM"))
         self.label.setText(_translate("MainWindow", "Run time"))
         self.btnSearchLog.setText(_translate("MainWindow", "Search"))
-        self.MainTap.setTabText(self.MainTap.indexOf(self.tapEvent), _translate("MainWindow", "Event logs"))
+        self.MainTap.setTabText(self.MainTap.indexOf(
+            self.tapEvent), _translate("MainWindow", "Event logs"))
         self.menuFile.setTitle(_translate("MainWindow", "File"))
         self.menuAbout.setTitle(_translate("MainWindow", "Help"))
         self.menuOptions.setTitle(_translate("MainWindow", "Options"))
@@ -229,7 +252,8 @@ class Ui_MainWindow(object):
         self.actionAbout.setText(_translate("MainWindow", "About"))
         self.actionStart.setText(_translate("MainWindow", "Start"))
         self.actionStop_Server.setText(_translate("MainWindow", "Stop"))
-        self.actionStop_Server.setShortcut(_translate("MainWindow", "Ctrl+Alt+T"))
+        self.actionStop_Server.setShortcut(
+            _translate("MainWindow", "Ctrl+Alt+T"))
 
     def setupEvent(self, MainWindow):
         self.btnSetting.clicked.connect(self.openServerSettingsDialog)
@@ -239,6 +263,7 @@ class Ui_MainWindow(object):
         self.ui = Ui_ServerSettingDialog()
         self.ui.setupUi(self.window)
         self.window.show()
+
 
 import resource_rc
 

@@ -50,11 +50,11 @@ class Ui_ServerSettingDialog(object):
         self.label.setText(_translate("ServerSettingDialog", "Server Address"))
         self.label_2.setText(_translate("ServerSettingDialog", "Port number"))
 
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    ServerSettingDialog = QtWidgets.QDialog()
-    ui = Ui_ServerSettingDialog()
-    ui.setupUi(ServerSettingDialog)
-    ServerSettingDialog.show()
-    sys.exit(app.exec_())
+# if __name__ == "__main__":
+#     import sys
+#     app = QtWidgets.QApplication(sys.argv)
+#     ServerSettingDialog = QtWidgets.QDialog()
+#     ui = Ui_ServerSettingDialog()
+#     ui.setupUi(ServerSettingDialog)
+#     ServerSettingDialog.show()
+#     sys.exit(app.exec_())
