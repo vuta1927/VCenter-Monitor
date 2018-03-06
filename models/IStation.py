@@ -3,3 +3,6 @@ class IStation:
         self.id = id
         self.address = address
         self.name = name
+
+    def get(self, id):
+        pass

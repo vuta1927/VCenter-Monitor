@@ -6,3 +6,6 @@ class IClient:
         self.idLocation = idLocation
         self.dateStart = dateStart
         self.mac = MACAddress
+
+    def Get(self, id):
+        
