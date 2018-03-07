@@ -95,7 +95,7 @@
             </layout>
            </item>
            <item row="1" column="0">
-            <widget class="QListView" name="grvClients"/>
+            <widget class="QTableWidget" name="tblClients"/>
            </item>
           </layout>
          </widget>
